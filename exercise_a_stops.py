@@ -3,7 +3,7 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 #1. Add "Edinburgh Waverley" to the end of the list
 stops.append("Edinburgh Waverley")
 #2. Add "Glasgow Queen St" to the start of the list
-stops.insert(0, "Glasgow")
+stops.insert(0, "Glasgow Queen St")
 #3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
 linlithgow_idx = stops.index("Linlithgow")
 stops.insert(linlithgow_idx, "Polmont")
