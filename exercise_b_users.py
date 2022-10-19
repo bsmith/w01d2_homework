@@ -75,6 +75,7 @@ print("Avril's pet Monty is a", monty_species)
 # 5. Get the smallest of Erik's lottery numbers
 print("Erik's smallest lottery number is",
     sorted(users["Erik"]["lottery_numbers"])[0])
+# Could also write a for-loop, but don't forget `min`!
 
 # 6. Return an list of Avril's lottery numbers that are even
 print("Avril's even lottery numbers:",
@@ -94,6 +95,9 @@ users["Erik"]["pets"].append(
     }
 )
 
+#users["Erik"]["pets"] += [{"name" : "fluffy", "species": "dog"}]
+#print(users["Erik"]["pets"])
+
 print("Erik's new lottery numbers:", users["Erik"]["lottery_numbers"])
 print("Erik's new hometown:", users["Erik"]["home_town"])
 print("Erik's new pets:", users["Erik"]["pets"])
@@ -112,6 +116,10 @@ new_user = {
     ]
 }
 users[new_name] = new_user
+
+# users.update({
+#     "twitter": "etc...",
+# })
 
 print("We have a new person:", users["Ben"])
 
